@@ -1,0 +1,57 @@
+%!PS-Adobe_3.0
+%%Author: Florian Frank
+%%Title: House first GS Project
+
+/startx 200 def
+/starty 200 def
+/widthWall 300 def
+/heightWall 300 def
+/heightRoof 200 def
+/widthDoor 40 def
+/heightDoor 60 def
+/widthWindow 40 def
+/heightWindow 40 def
+
+%%walls
+newpath
+startx starty moveto
+widthWall 0 rlineto
+0 heightWall rlineto
+startx starty moveto
+0 heightWall rlineto
+widthWall 0 rlineto
+stroke
+
+%%roof
+newpath
+startx starty widthWall add moveto
+widthWall 2 div heightRoof rlineto
+widthWall 2 div heightRoof neg rlineto
+1 0 0 setrgbcolor
+fill
+stroke
+0 0 0 setrgbcolor
+
+%%door
+newpath 
+startx widthWall 2 div add widthDoor 2 div sub starty moveto
+0 heightDoor rlineto
+widthDoor 0 rlineto
+0 heightDoor neg rlineto
+stroke
+
+%%window1
+startx 50 add starty 150 add moveto 
+0 widthWindow rlineto
+heightWindow 0 rlineto
+0 widthWindow neg rlineto
+heightWindow neg 0 rlineto
+stroke
+
+%%window
+startx widthWall 50 widthWindow add sub add starty 150 add moveto 
+0 widthWindow rlineto
+heightWindow 0 rlineto
+0 widthWindow neg rlineto
+heightWindow neg 0 rlineto
+stroke

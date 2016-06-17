@@ -1,0 +1,1 @@
+﻿Arithmetik hinzugefügt mit richtiger Bindung

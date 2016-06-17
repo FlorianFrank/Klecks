@@ -1,0 +1,11 @@
+Einführung in Ghostscript
+Zeichnen eines Hauses
+/variablenname wert def -> legt eine konstante an
+newpath -> erstellt neuen Pfad in welchem formen gezeichnet werden können
+x y moveto -> bewegt Zeiger an bestimmten Punkt
+x y lineto -> zeichnet Linie absolut von vom vorher anvisierten Punkt von moveto
+x y rlineto -> wie lineto nur relativ
+x y z setrgbcolor -> setzt rgb farbe 
+x y (add/div/mul/sub) -> arithmetische berechnung
+x neg -> negatives Vorzeichen wird gesetzt
+stroke -> Form wird gezeichnet

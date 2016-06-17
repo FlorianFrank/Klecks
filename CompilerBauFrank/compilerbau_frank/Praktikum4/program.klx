@@ -1,0 +1,7 @@
+
+Circle;
+Rectangle Fill;
+[500@500] Color [1@0@0] Rectangle Fill Rotate [90] Scale [50@50];
+[400@400] Triangle Fill;
+
+
